@@ -49,3 +49,5 @@ We can do this altogether using this command as well:
 ```bash
  sh artifact.sh --slurm docker
 ```
+## Location of the updates files in Sniper:
+/sniper/common/core/memory_subsytem/cache/
