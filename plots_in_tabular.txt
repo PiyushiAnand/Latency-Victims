@@ -1,0 +1,71 @@
+
+                                       _
+                                     / |
+                                    /  |
+                                   /   |
+                                  /    |
+                ,____.-----------'     `.______,                         ._
+           ._--"                                "-----.______,          / /
+         ,/__o_~##mm                                          "-----__./  |
+         ==--    ~~                                 ____               \_ |
+          "~###**~~~|   \                    ./####"            _________(
+               ~~~##|    |~~~      _________/###/                /###\.   |
+                    (    |##################~__________--------~~~~~~~~\  |
+                     \   |  ~~###########~~~~~~                         \._
+                      \__            :- Orcinus Orca wishes a nice summer  -:
+
+L2 metrics
+Access/Miss Ratio Across experiments (Dead block)
+IPC values
+experiment
+victima_ptw_1MBL2    0.506859
+victima_ptw_2MBL2    0.557127
+victima_ptw_4MBL2    0.580527
+victima_ptw_8MBL2    0.580351
+Name: IPC, dtype: float64
+Plotting Figure 6: L2 Cache Data Reuse for different traces
+
+===============================================================
+
+      L2.data-reuse-0 L2.data-reuse-1 L2.data-reuse-2 L2.data-reuse-3 L2.data-reuse-4
+Exp    tlb_base_ideal  tlb_base_ideal  tlb_base_ideal  tlb_base_ideal  tlb_base_ideal
+Trace                                                                                
+xs          98.012138        1.937885        0.024772        0.013021        0.012184
+MEAN        98.012138        1.937885        0.024772        0.013021        0.012184
+
+===============================================================
+
+Plotting Figure 15: Normalized Speedup for different configurations
+
+===============================================================
+
+Exp    tlb_base_ideal  victima_ptw_2MBL2
+Trace                                   
+xs                1.0           1.190462
+GMEAN             1.0           1.190462
+
+===============================================================
+
+
+===============================================================
+
+Plotting Figure 19: L2 Cache TLB Reuse with Victima
+
+===============================================================
+
+         L2.tlb-reuse-0    L2.tlb-reuse-1    L2.tlb-reuse-2    L2.tlb-reuse-3    L2.tlb-reuse-4
+Exp   victima_ptw_2MBL2 victima_ptw_2MBL2 victima_ptw_2MBL2 victima_ptw_2MBL2 victima_ptw_2MBL2
+Trace                                                                                          
+xs            51.132767         20.080136           9.92326          9.388795          9.475042
+GMEAN         51.132767         20.080136           9.92326          9.388795          9.475042
+
+===============================================================
+
+Plotting Figure 20: PTW Reduction across different L2 Cache Sizes
+
+===============================================================
+
+Exp         1MB        2MB       4MB        8MB
+Trace                                          
+xs     69.10088  90.778567  97.11552  97.670552
+GMEAN  69.10088  90.778567  97.11552  97.670552
