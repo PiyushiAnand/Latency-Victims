@@ -49,5 +49,62 @@ We can do this altogether using this command as well:
 ```bash
  sh artifact.sh --slurm docker
 ```
-## Location of the updates files in Sniper:
-/sniper/common/core/memory_subsytem/cache/
+## Victima Codebase Modifications
+
+### Files Updated in the Victima Codebase:
+
+1. **Cache Folder**  
+   - Updated files in:  
+     `Victima/sniper/common/core/memory_subsystem/cache/`
+
+2. **Cache Controller Files**  
+   - Updated the following files in:  
+     `Victima/sniper/common/core/memory_subsystem/parametric_dram_directory_msi/`
+     - `cache_cntlr.cc`
+     - `cache_cntlr.h`
+
+3. **Plotting Script**  
+   - Modified the `create_plots.py` file to generate the required plots.
+   - The same plotting code was used to generate plots for Victima **without** the dead block predictor implemented.
+
+---
+
+### Experiments Conducted:
+
+The experiments were run on the **`xs`** trace for **100,000,000 instructions**. Below are the experiments executed:
+
+- `victima_ptw_1MBL2`
+- `victima_ptw_2MBL2`
+- `victima_ptw_4MBL2`
+- `victima_ptw_8MBL2`
+- `baseline_radix_1MB`
+- `baseline_radix_2MB`
+- `baseline_radix_4MB`
+- `baseline_radix_8MB`
+- `tlb_base_ideal`
+
+---
+
+## Steps to Reproduce Results:
+
+1. **Replace the Cache Folder**  
+   - Replace the folder at:  
+     `Victima/sniper/common/core/memory_subsystem/cache/`  
+     with the `cache` folder provided in this repository.
+
+2. **Replace Cache Controller Files**  
+   - Replace the following files at:  
+     `Victima/sniper/common/core/memory_subsystem/parametric_dram_directory_msi/`
+     - `cache_cntlr.cc`
+     - `cache_cntlr.h`
+
+3. **Replace Plotting Script**  
+   - Replace the `create_plots.py` file at:  
+     `Victima/scripts/create_plots.py`  
+     with the `create_plots.py` file provided in this repository.
+
+---
+
+By following these steps, you can reproduce the results and generate the plots corresponding to the experiments mentioned above.
+
+
